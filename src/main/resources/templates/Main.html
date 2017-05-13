@@ -1,39 +1,37 @@
 <!DOCTYPE HTML>
 
- <head>
-  <link rel="shortcut icon" href="./pics/icon.png" type="image/png">
-  <title>FarmView</title>
-  <link rel="stylesheet" type="text/css" href="tooplate_style.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="calendar.css">
-  <script type="text/css" src="script for calendar.css"></script>
- </head>
+<head>
+    <link rel="shortcut icon" href="Kursach/src/main/resources/pics/icon.png" type="image/png" alt="Не удалось загрузить картинку">
+    <title>FarmView</title>
+    <link rel="stylesheet" type="text/css" href="tooplate_style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+    <script type="text/css" src="script for calendar.css"></script>
+</head>
 
 
- <body rext="#000" background="pics/123456.jpg" bgcolor="MistyRose">
+<body rext="#000" background="bg.jpg" bgcolor="MistyRose">
 
- <div id="wrapper">
+<div id="wrapper">
 
-  <div id="header">
-    <img src="pics/wrap.png" width="99%" position="absolute">
-  </div>
-
-
-
- <div id="tooplate_menu">
-  <ul>
-   <li><a href="home.html"><font color="Navy">Р“Р»Р°РІРЅР°СЏ</font></a></li>
-   <li><a href="farm.html">РђРїС‚РµРєРё</a></li>
-   <li><a href="med">Р›РµРєР°СЂСЃС‚РІР°</a></li>
-   <li><a href="fb.html">РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ</a></li>
-  </ul>
- </div>
+    <div id="header">
+        <img src="wrap.png" height="250px" width="1000px" position="absolute" align="center">
+    </div>
 
 
+    <div id="tooplate_menu" align="center">
+        <ul>
+            <a href="home.html"><font color="Navy">Главная</font></a>
+            <a href="farm.html">Аптеки</a>
+            <a href="med">Лекарства</a>
+            <a href="fb.html">Обратная связь</a>
+        </ul>
+    </div>
 
- <div id="left">
-<td>
-<style>
+
+    <div id="left">
+        <td>
+            <style>
 #calendar3 {
   table-layout: fixed;
   width: 200px;
@@ -59,26 +57,97 @@
 #calendar3 input {
   width: 100%;
 }
-</style>
-<table id="calendar3">
-  <thead>
-    <tr><td colspan="4"><select>
-<option value="0">РЇРЅРІР°СЂСЊ</option>
-<option value="1">Р¤РµРІСЂР°Р»СЊ</option>
-<option value="2">РњР°СЂС‚</option>
-<option value="3">РђРїСЂРµР»СЊ</option>
-<option value="4">РњР°Р№</option>
-<option value="5" style="color: rgb(220, 0, 0);">РСЋРЅСЊ</option>
-<option value="6">РСЋР»СЊ</option>
-<option value="7">РђРІРіСѓСЃС‚</option>
-<option value="8">РЎРµРЅС‚СЏР±СЂСЊ</option>
-<option value="9">РћРєС‚СЏР±СЂСЊ</option>
-<option value="10">РќРѕСЏР±СЂСЊ</option>
-<option value="11">Р”РµРєР°Р±СЂСЊ</option>
-</select></td><td colspan="3"><input type="number" value="" min="0" max="9999" size="4">
-    </td></tr><tr><td>РџРќ</td><td>Р’Рў</td><td>РЎР </td><td>Р§Рў</td><td>РџРў</td><td>РЎР‘</td><td>Р’РЎ
-  </td></tr></thead><tbody><tr><td>1</td><td>2</td><td class="today">3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td class="holiday">12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
-<script>
+
+            </style>
+            <table id="calendar3">
+                <thead>
+                <tr>
+                    <td colspan="4"><select>
+                        <option value="0">Январь</option>
+                        <option value="1">Февраль</option>
+                        <option value="2">Март</option>
+                        <option value="3">Апрель</option>
+                        <option value="4">Май</option>
+                        <option value="5" style="color: rgb(220, 0, 0);">Июнь</option>
+                        <option value="6">Июль</option>
+                        <option value="7">Август</option>
+                        <option value="8">Сентябрь</option>
+                        <option value="9">Октябрь</option>
+                        <option value="10">Ноябрь</option>
+                        <option value="11">Декабрь</option>
+                    </select></td>
+                    <td colspan="3"><input type="number" value="" min="0" max="9999" size="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>ПН</td>
+                    <td>ВТ</td>
+                    <td>СР</td>
+                    <td>ЧТ</td>
+                    <td>ПТ</td>
+                    <td>СБ</td>
+                    <td>ВС
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class="today">3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td class="holiday">12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+            <script>
 function Calendar3(id, year, month) {
 var Dlast = new Date(year,month+1,0).getDate(),
     D = new Date(year,month,Dlast),
@@ -96,19 +165,19 @@ for(var  i = 1; i <= Dlast; i++) {
   if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
     calendar += '<td class="today">' + i;
   }else{
-    if (  // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
-        (i == 1 && D.getMonth() == 0 && ((D.getFullYear() > 1897 && D.getFullYear() < 1930) || D.getFullYear() > 1947)) || // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
-        (i == 2 && D.getMonth() == 0 && D.getFullYear() > 1992) || // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
-        ((i == 3 || i == 4 || i == 5 || i == 6 || i == 8) && D.getMonth() == 0 && D.getFullYear() > 2004) || // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
-        (i == 7 && D.getMonth() == 0 && D.getFullYear() > 1990) || // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
-        (i == 23 && D.getMonth() == 1 && D.getFullYear() > 2001) || // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
-        (i == 8 && D.getMonth() == 2 && D.getFullYear() > 1965) || // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
-        (i == 1 && D.getMonth() == 4 && D.getFullYear() > 1917) || // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
-        (i == 9 && D.getMonth() == 4 && D.getFullYear() > 1964) || // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
-        (i == 12 && D.getMonth() == 5 && D.getFullYear() > 1990) || // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ)
-        (i == 7 && D.getMonth() == 10 && (D.getFullYear() > 1926 && D.getFullYear() < 2005)) || // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1917 пїЅпїЅпїЅпїЅ
-        (i == 8 && D.getMonth() == 10 && (D.getFullYear() > 1926 && D.getFullYear() < 1992)) || // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1917 пїЅпїЅпїЅпїЅ
-        (i == 4 && D.getMonth() == 10 && D.getFullYear() > 2004) // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1917 пїЅпїЅпїЅпїЅ
+    if (  // ?????? ??????????? ??????????
+        (i == 1 && D.getMonth() == 0 && ((D.getFullYear() > 1897 && D.getFullYear() < 1930) || D.getFullYear() > 1947)) || // ????? ???
+        (i == 2 && D.getMonth() == 0 && D.getFullYear() > 1992) || // ????? ???
+        ((i == 3 || i == 4 || i == 5 || i == 6 || i == 8) && D.getMonth() == 0 && D.getFullYear() > 2004) || // ????? ???
+        (i == 7 && D.getMonth() == 0 && D.getFullYear() > 1990) || // ????????? ????????
+        (i == 23 && D.getMonth() == 1 && D.getFullYear() > 2001) || // ???? ????????? ?????????
+        (i == 8 && D.getMonth() == 2 && D.getFullYear() > 1965) || // ????????????? ??????? ????
+        (i == 1 && D.getMonth() == 4 && D.getFullYear() > 1917) || // ???????? ????? ? ?????
+        (i == 9 && D.getMonth() == 4 && D.getFullYear() > 1964) || // ???? ??????
+        (i == 12 && D.getMonth() == 5 && D.getFullYear() > 1990) || // ???? ?????? (?????????? ? ??????????????? ???????????? ?????????? ????????? ???????????? ????????????? ?????? ????)
+        (i == 7 && D.getMonth() == 10 && (D.getFullYear() > 1926 && D.getFullYear() < 2005)) || // ??????????? ????????? 1917 ????
+        (i == 8 && D.getMonth() == 10 && (D.getFullYear() > 1926 && D.getFullYear() < 1992)) || // ??????????? ????????? 1917 ????
+        (i == 4 && D.getMonth() == 10 && D.getFullYear() > 2004) // ???? ????????? ????????, ??????? ??????? ??????????? ????????? 1917 ????
        ) {
       calendar += '<td class="holiday">' + i;
     }else{
@@ -132,19 +201,20 @@ Calendar3("calendar3",new Date().getFullYear(),new Date().getMonth());
 document.querySelector('#calendar3').onchange = function Kalendar3() {
   Calendar3("calendar3",document.querySelector('#calendar3 input').value,parseFloat(document.querySelector('#calendar3 select').options[document.querySelector('#calendar3 select').selectedIndex].value));
 }
-</script>
-</td>
+
+            </script>
+        </td>
+    </div>
+
+    <div id="main">
+    </div>
+
+    <div id="footer">
+        <img src="foot.png" width="1000px" height="100px" position="absolute" align="center"/>
+    </div>
+
 </div>
 
- <div id="main">
- </div>
-
- <div id="footer">
-  <img src="pics/foot.png"/>
- </div>
-
- </div>
-
- </body>
+</body>
 
 </html>

@@ -1,63 +1,36 @@
-#body
+#wrapper
 {
-	width: 70%;
-	heigth: 90%;
-}
-
-
-#wrapper 
-{
-    /*position: relative;*/
     width: 1000px;
+    height: 1000px;
     margin: 0 auto;
     background:  #DFF8FF;
 }
-
 
 #header 
 {
     position: relative;    
     width:1000px;
-    height:170px;
+    height:200px;
     background:  #98EAFF;
 }
 
-
 #left 
 {
-    position: absolute;
+    position: relative;
     left: auto;
     width: 200px;
     background:  #DFF8FF;
 }
 
-
-#right 
+#main
 {
-   float: right;
-   width: 200px;
-   background:  #DFF8FF;
-}
-
-
-
-#main 
-{
+    position: relative;
    margin: 0 30% auto 30%;
    background:  #DFF8FF;
 }
 
-
-
 #footer 
 {
-    clear: both;
+    position: relative;
+    bottom: 0;
 }
-  
-
-#brd 
-{
-    border: 2px double black; /* Параметры границы */
-    padding: 10px; /* Поля вокруг текста */
-    border-radius: 10px;
- }

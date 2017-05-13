@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 
 <head>
-    <link rel="shortcut icon" href="Kursach/src/main/resources/pics/icon.png" type="image/png" alt="Не удалось загрузить картинку">
+    <link rel="shortcut icon" href="Kursach/src/main/resources/pics/icon.png" type="image/png"
+          alt="Не удалось загрузить картинку">
     <title>FarmView</title>
     <link rel="stylesheet" type="text/css" href="tooplate_style.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -15,17 +16,25 @@
 <div id="wrapper">
 
     <div id="header">
-        <img src="wrap.png" height="250px" width="1000px" position="absolute" align="center">
+        <img src="wrap.png" height="100%" width="100%" position="relative" align="center">
     </div>
 
 
-    <div id="tooplate_menu" align="center">
-        <ul>
+    <div id="tooplate_menu">
             <a href="home.html"><font color="Navy">Главная</font></a>
             <a href="farm.html">Аптеки</a>
             <a href="med">Лекарства</a>
             <a href="fb.html">Обратная связь</a>
-        </ul>
+    </div>
+
+
+    <div id="main">
+
+        <form>
+            <p><input type="search" name="q" placeholder="Поиск по сайту">
+                <input type="submit" value="Найти"></p>
+        </form>
+
     </div>
 
 
@@ -57,6 +66,7 @@
 #calendar3 input {
   width: 100%;
 }
+
 
             </style>
             <table id="calendar3">
@@ -202,17 +212,15 @@ document.querySelector('#calendar3').onchange = function Kalendar3() {
   Calendar3("calendar3",document.querySelector('#calendar3 input').value,parseFloat(document.querySelector('#calendar3 select').options[document.querySelector('#calendar3 select').selectedIndex].value));
 }
 
+
             </script>
         </td>
     </div>
 
-    <div id="main">
-    </div>
 
     <div id="footer">
-        <img src="foot.png" width="1000px" height="100px" position="absolute" align="center"/>
+        <img src="foot.png" width="1000px" height="100px"/>
     </div>
-
 </div>
 
 </body>

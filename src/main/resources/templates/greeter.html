@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="templates/icon.png" type="image/png">
+    <title>FarmView</title>
+
+</head>
+<body>
+
+<div id="tooplate_menu" position="relative" align="center">
+    <a href="Main.html"><font color="Navy">Главная</font></a>
+    <a href="farm.html">Аптеки</a>
+    <a href="med">Лекарства</a>
+    <a href="fb.html">Контакты</a>
+</div>
+<div id="main">
+    <h1>Spring demo</h1>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+</div>
+<div id="footer" position="relative" bottom="0">
+    <img src="foot.png" width="100%" height="auto"/>
+</div>
+</body>
+</html>

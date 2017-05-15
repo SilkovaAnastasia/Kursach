@@ -1,15 +1,13 @@
 <!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 
 <head>
-    <link rel="shortcut icon" href="Kursach/src/main/resources/pics/icon.png" type="image/png"
-          alt="Не удалось загрузить картинку">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="icon.png" type="image/png">
     <title>FarmView</title>
     <link rel="stylesheet" type="text/css" href="tooplate_style.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="calendar.css">
-    <script type="text/css" src="script for calendar.css"></script>
 </head>
-
 
 <body rext="#000" background="bg.jpg" bgcolor="MistyRose">
 
@@ -20,25 +18,29 @@
     </div>
 
 
-    <div id="tooplate_menu">
-            <a href="home.html"><font color="Navy">Главная</font></a>
-            <a href="farm.html">Аптеки</a>
-            <a href="med">Лекарства</a>
-            <a href="fb.html">Обратная связь</a>
+    <div id="tooplate_menu" position="relative" align="center">
+            <a href="Main.html"><font color="Navy">Р“Р»Р°РІРЅР°СЏ</font></a>
+            <a href="farm.html">РђРїС‚РµРєРё</a>
+            <a href="med">Р›РµРєР°СЂСЃС‚РІР°</a>
+            <a href="fb.html">РљРѕРЅС‚Р°РєС‚С‹</a>
     </div>
 
 
     <div id="main">
-
-        <form>
-            <p><input type="search" name="q" placeholder="Поиск по сайту">
-                <input type="submit" value="Найти"></p>
-        </form>
-
+        <h1>Spring demo</h1>
+        <p th:text="'Hello, ' + ${name} + '!'" />
     </div>
 
 
     <div id="left">
+
+        <form>
+            <p>
+                <input type="search" name="q" placeholder="Р’РІРµРґРёС‚Рµ РґР»СЏ РїРѕРёСЃРєР°">
+                <input type="submit" value="РџРѕРёСЃРє">
+            </p>
+        </form>
+
         <td>
             <style>
 #calendar3 {
@@ -73,31 +75,30 @@
                 <thead>
                 <tr>
                     <td colspan="4"><select>
-                        <option value="0">Январь</option>
-                        <option value="1">Февраль</option>
-                        <option value="2">Март</option>
-                        <option value="3">Апрель</option>
-                        <option value="4">Май</option>
-                        <option value="5" style="color: rgb(220, 0, 0);">Июнь</option>
-                        <option value="6">Июль</option>
-                        <option value="7">Август</option>
-                        <option value="8">Сентябрь</option>
-                        <option value="9">Октябрь</option>
-                        <option value="10">Ноябрь</option>
-                        <option value="11">Декабрь</option>
+                        <option value="0">РЇРЅРІР°СЂСЊ</option>
+                        <option value="1">Р¤РµРІСЂР°Р»СЊ</option>
+                        <option value="2">РњР°СЂС‚</option>
+                        <option value="3">РђРїСЂРµР»СЊ</option>
+                        <option value="4">РњР°Р№</option>
+                        <option value="5">РСЋРЅСЊ</option>
+                        <option value="6">РСЋР»СЊ</option>
+                        <option value="7">РђРІРіСѓСЃС‚</option>
+                        <option value="8">РЎРµРЅС‚СЏР±СЂСЊ</option>
+                        <option value="9">РћРєС‚СЏР±СЂСЊ</option>
+                        <option value="10">РќРѕСЏР±СЂСЊ</option>
+                        <option value="11">Р”РµРєР°Р±СЂСЊ</option>
                     </select></td>
                     <td colspan="3"><input type="number" value="" min="0" max="9999" size="4">
                     </td>
                 </tr>
                 <tr>
-                    <td>ПН</td>
-                    <td>ВТ</td>
-                    <td>СР</td>
-                    <td>ЧТ</td>
-                    <td>ПТ</td>
-                    <td>СБ</td>
-                    <td>ВС
-                    </td>
+                    <td>РџРќ</td>
+                    <td>Р’Рў</td>
+                    <td>РЎР </td>
+                    <td>Р§Рў</td>
+                    <td>РџРў</td>
+                    <td>РЎР‘</td>
+                    <td>Р’РЎ</td>
                 </tr>
                 </thead>
                 <tbody>

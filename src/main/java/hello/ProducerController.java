@@ -1,6 +1,6 @@
 package hello;
 
-import hello.model.Person;
+import hello.model.Producer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,22 +11,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
-import hello.model.Doctor;
-import hello.DoctorRepository;
+import hello.ProducerRepository;
 
-/**
- * Created by Анютка on 13.05.2017.
- */
+
 @Controller
 @RequestMapping("/demo")
-public class DoctorController {
+public class ProducerController {
     @Autowired
-    private DoctorRepository doctorRepository;
+    private ProducerRepository producerRepository;
 
     @RequestMapping("/list")
-    public String doctor (Model model) {
-        model.addAttribute("doctor", doctorRepository.findAll());
+    public String producer (Model model) {
+        model.addAttribute("doctor", producerRepository.findAll());
         return "doctor";
     }
 
@@ -34,30 +30,30 @@ public class DoctorController {
     public
     @ResponseBody
     String add(@RequestParam  String scientific_degree, @RequestParam String academic_title, @RequestParam int n_person, @RequestParam String specialty_branch) {
-        Doctor n = new Doctor();
+        Producer n = new Producer();
         n.setScientific_degree(scientific_degree);
         n.setAcademic_title(academic_title);
         n.setN_person(n_person);
         n.setSpecialty_branch(specialty_branch);
 
-        doctorRepository.save(n);
+        producerRepository.save(n);
         return "Saved";
     }
     @RequestMapping("/all")
-    public @ResponseBody Iterable<Doctor> getAllDoctor() {
+    public @ResponseBody Iterable<Producer> getAllProducer() {
 
-        return doctorRepository.findAll();
+        return ProducerRepository.findAllProducer();
     }
-    @RequestMapping(value="/doctor", method= RequestMethod.GET)
+    @RequestMapping(value="/producer", method= RequestMethod.GET)
     public String greetingForm(Model model) {
-        model.addAttribute("doctor", new Doctor());
-        return "doctor";
+        model.addAttribute("producer", new Producer());
+        return "producer";
     }
 
-    @RequestMapping(value="/doctor", method=RequestMethod.POST)
-    public String greetingSubmit(@ModelAttribute Doctor n, Model model) {
-        doctorRepository.save(n);
-        model.addAttribute("doctor", n);
+    @RequestMapping(value="/producer", method=RequestMethod.POST)
+    public String greetingSubmit(@ModelAttribute Producer n, Model model) {
+        producerRepository.save(n);
+        model.addAttribute("producer", n);
         return "result";
     }
 

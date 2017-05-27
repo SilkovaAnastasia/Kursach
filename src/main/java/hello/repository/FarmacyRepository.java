@@ -1,4 +1,4 @@
-package hello;
+package hello.repository;
 
 import hello.model.Farmacy;
 import org.springframework.data.repository.CrudRepository;

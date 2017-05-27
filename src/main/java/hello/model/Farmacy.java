@@ -1,6 +1,4 @@
 package hello.model;
-import sun.awt.image.SunWritableRaster;
-import sun.util.calendar.LocalGregorianCalendar;
 
 import javax.persistence.*;
 
@@ -27,8 +25,13 @@ public class Farmacy {
         return nFarmacy;
     }
 
+<<<<<<< HEAD
     public void setNFarmacy(int nFarmacy) {
         this.nFarmacy = nFarmacy;
+=======
+    public void setN_farmacy(int n_farmacy) {
+        this.n_farmacy = n_farmacy;
+>>>>>>> 9beee718ead600dcdbdda4ca51ae4134b14c8e27
     }
 
     public String getFName() {
@@ -59,8 +62,13 @@ public class Farmacy {
         return fdMiddleName;
     }
 
+<<<<<<< HEAD
     public void setFDMiddleName(String fdMiddleName) {
         this.fdMiddleName = fdMiddleName;
+=======
+    public void setDMiddleName(String dMiddleName) {
+        this.dMiddleName = dMiddleName;
+>>>>>>> 9beee718ead600dcdbdda4ca51ae4134b14c8e27
     }
 
     public int getFBuild() {

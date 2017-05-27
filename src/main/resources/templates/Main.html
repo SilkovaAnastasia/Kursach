@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="shortcut icon" href="icon.png" type="image/png"/>
+    <link rel="shortcut icon" href="./icon.png" type="image/png"/>
     <title>FarmView</title>
     <link rel="stylesheet" type="text/css" href="/tooplate_style.css"/>
     <link rel="stylesheet" type="text/css" href="/style.css"/>
@@ -14,7 +14,7 @@
 <div id="wrapper">
 
     <div id="header">
-        <img src="/wrap.png" height="100%" width="100%" position="relative" align="center"/>
+        <img src="./wrap.png" height="100%" width="100%" position="relative" align="center"/>
     </div>
 
 
@@ -29,6 +29,25 @@
     <div id="main">
         <h1>Spring demo</h1>
         <p th:text="'Hello, ' + ${name} + '!'" />
+
+        <form action="#" th:action="@{/farmacy/farmacy}" th:object="${farmacy}" method="post">
+
+        <p>Id: <input type="text" th:field="*{nFarmacy}" /></p>
+            <p>Id: <input type="text" th:field="*{nFarmacy}" /></p>
+            <p>Name: <input type="text" th:field="*{fName}" /></p>
+            <p>Director's Surname: <input type="text" th:field="*{fdSurname}" /></p>
+            <p>Director's Name: <input type="text" th:field="*{fdName}" /></p>
+            <p>Director's Middle Name: <input type="text" th:field="*{fdMiddleName}" /></p>
+            <p>Build's number: <input type="text" th:field="*{fBuild}" /></p>
+            <p>Street: <input type="text" th:field="*{fStreet}" /></p>
+            <p>City: <input type="text" th:field="*{fCity}" /></p>
+            <p>Country: <input type="text" th:field="*{fCounry}" /></p>
+            <p>Index: <input type="text" th:field="*{fIndex}" /></p>
+
+        <p><input type="submit" value="Submit" /> <input type="Reset" value="Reset" /></p>
+
+
+
     </div>
 
 

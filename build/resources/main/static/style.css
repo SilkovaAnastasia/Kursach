@@ -18,6 +18,7 @@
 {
     position: relative;
     left: auto;
+    margin: top;
     width: 250px;
     background:  #DFF8FF;
 }
@@ -32,5 +33,7 @@
 #footer 
 {
     position: relative;
-    bottom: 0;
+    width:1000px;
+    height:200px;
+    background:  #98EAFF;
 }

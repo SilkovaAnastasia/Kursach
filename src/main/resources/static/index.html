@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="shortcut icon" th:href="@{resources/static/icon.png}" type="image/png"/>
+    <link rel="shortcut icon" th:href="/icon.png" type="image/png"/>
     <title>FarmView</title>
     <link rel="stylesheet" type="text/css" href="/tooplate_style.css"/>
     <link rel="stylesheet" type="text/css" href="/style.css"/>
@@ -14,7 +14,7 @@
 <div id="wrapper">
 
     <div id="header">
-        <img src="@{resources/static/wrap.png}" height="100%" width="100%" position="relative" align="center"/>
+        <img src="/wrap.png" height="100%" width="100%" position="relative" align="center"/>
     </div>
 
 
@@ -33,8 +33,11 @@
 
         <p th:text="@{/demo/list}"/>
 
-        <form action="#" th:action="@{/demo}" th:object="${farmacy}" method="post">
-        <input type="text" th:field="*{nFarmacy}"/>
+        <form action="#" th:action="@{/demo/farmacy}" th:object="${farmacy}" method="GET"/>
+        <form action="#" th:action="@{/demo/add}" th:object="${farmacy}"/>
+        <form action="#" th:action="@{/demo/farmacy}" th:object="${farmacy}" method="POST"/>
+
+        <p>Id: <input type="text" th:field="*{nFarmacy}"/></p>
         <p>Farmacy's name: <input type="text" th:field="*{fName}" /></p>
         <p>Director's Surname: <input type="text" th:field="*{fdSurname}" /></p>
         <p>Director's Name: <input type="text" th:field="*{fdName}" /></p>
@@ -49,7 +52,7 @@
             <input type="submit" value="Submit" />
             <input type="Reset" value="Reset" />
         </p>
-        </form>
+
 
     </div>
 
@@ -242,7 +245,7 @@
 
 
     <div id="footer">
-        <img th:src="@{resources/static/foot.png}"/>
+        <img src="/foot.png" height="100%" width="100%" position="relative" align="center"/>
     </div>
 
 </div>

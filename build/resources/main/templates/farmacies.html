@@ -2,12 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Users</title>
+    <title>Farmacies</title>
 </head>
 <body>
-    <h1>Users list</h1>
-    <p th:each="user : ${mdl}">
-        <p th:text="'ID ' + ${user.id} + ' Email ' + ${user.email} + ' Name ' +  ${user.name}"  />
+    <h1>Farmacy list</h1>
+    <p th:each="farmacy : ${mdl}">
+        <p th:text="'ID ' + ${farmacy.id} + ' Name ' + ${farmacy.name}"/>
     </p>
 
 </body>

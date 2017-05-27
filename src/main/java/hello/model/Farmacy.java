@@ -6,32 +6,29 @@ import javax.persistence.*;
 @Table(name = "FarmacyAll")
 public class Farmacy {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer nFarmacy;
+    public Farmacy() {}
 
-    @Column(name = "farmacy")
-    private String fName;
-    private String fdSurname;
-    private String fdName;
-    private String fdMiddleName;
-    private int fBuild;
-    private String fStreet;
-    private String fCity;
-    private String fCountry;
-    private int fIndex;
+        @Id
+        @GeneratedValue(strategy = GenerationType.AUTO)
+        private Integer nFarmacy;
+
+        @Column(name = "farmacy")
+        private String fName;
+        private String fdSurname;
+        private String fdName;
+        private String fdMiddleName;
+        private int fBuild;
+        private String fStreet;
+        private String fCity;
+        private String fCountry;
+        private int fIndex;
 
     public int getNFarmacy() {
         return nFarmacy;
     }
 
-<<<<<<< HEAD
     public void setNFarmacy(int nFarmacy) {
         this.nFarmacy = nFarmacy;
-=======
-    public void setN_farmacy(int n_farmacy) {
-        this.n_farmacy = n_farmacy;
->>>>>>> 9beee718ead600dcdbdda4ca51ae4134b14c8e27
     }
 
     public String getFName() {
@@ -62,13 +59,8 @@ public class Farmacy {
         return fdMiddleName;
     }
 
-<<<<<<< HEAD
     public void setFDMiddleName(String fdMiddleName) {
         this.fdMiddleName = fdMiddleName;
-=======
-    public void setDMiddleName(String dMiddleName) {
-        this.dMiddleName = dMiddleName;
->>>>>>> 9beee718ead600dcdbdda4ca51ae4134b14c8e27
     }
 
     public int getFBuild() {

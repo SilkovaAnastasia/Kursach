@@ -10,25 +10,25 @@ public class Farmacy {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer n_farmacy;
+    private Integer nFarmacy;
 
     @Column(name = "farmacy")
     private String fName;
-    private String dSurname;
-    private String dName;
-    private String dMiddleName;
+    private String fdSurname;
+    private String fdName;
+    private String fdMiddleName;
     private int fBuild;
     private String fStreet;
     private String fCity;
     private String fCountry;
     private int fIndex;
 
-    public int getN_farmacy() {
-        return n_farmacy;
+    public int getNFarmacy() {
+        return nFarmacy;
     }
 
-    public void setN_farmacy(int n_farmacy) {
-        this.n_person = n_farmacy;
+    public void setNFarmacy(int nFarmacy) {
+        this.nFarmacy = nFarmacy;
     }
 
     public String getFName() {
@@ -39,28 +39,28 @@ public class Farmacy {
         this.fName = fName;
     }
 
-    public String getDSurname() {
-        return dSurname;
+    public String getFDSurname() {
+        return fdSurname;
     }
 
-    public void setDSurname(String dSurname) {
-        this.dSurname = dSurname;
+    public void setFDSurname(String fdSurname) {
+        this.fdSurname = fdSurname;
     }
 
-    public String getDName() {
-        return dName;
+    public String getFDName() {
+        return fdName;
     }
 
-    public void setDName(String dName) {
-        this.dName = dName;
+    public void setFDName(String fdName) {
+        this.fdName = fdName;
     }
 
-    public String getDMiddleName() {
-        return dMiddleName;
+    public String getFDMiddleName() {
+        return fdMiddleName;
     }
 
-    public void setDMiddleName(String dMiddleName) {
-        this.surname = dMiddleName;
+    public void setFDMiddleName(String fdMiddleName) {
+        this.fdMiddleName = fdMiddleName;
     }
 
     public int getFBuild() {
